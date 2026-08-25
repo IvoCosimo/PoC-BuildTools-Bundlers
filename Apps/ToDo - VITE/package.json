@@ -1,0 +1,25 @@
+{
+  "name": "poc-vite-crud",
+  "version": "1.0.0",
+  "description": "PoC de Build Tools & Bundlers - Implementacion con Vite",
+  "type": "module",
+  "scripts": {
+    "api": "json-server --watch db.json --port 4000",
+    "dev": "vite",
+    "start": "concurrently \"npm run api\" \"npm run dev\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "concurrently": "^9.0.1",
+    "json-server": "^0.17.4",
+    "vite": "^5.4.6"
+  }
+}
