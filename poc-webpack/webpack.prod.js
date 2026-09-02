@@ -4,7 +4,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'production',
-  devtool: 'source-map',
+  devtool: false, //false o 'source-map'. conviene false para que optimice mejor el codigo de produccion final
   module: {
     rules: [
       {
